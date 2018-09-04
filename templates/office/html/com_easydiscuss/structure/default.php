@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		<?php echo DISCUSS_POWERED_BY; ?>
 	<?php } ?>
 
-
-
 	<input type="hidden" class="easydiscuss-token" value="<?php echo ED::getToken();?>" data-ed-token />
 	<input type="hidden" data-ed-ajax-url value="<?php echo $ajaxUrl;?>" />
 </div>
