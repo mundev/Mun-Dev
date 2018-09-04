@@ -135,6 +135,13 @@ class plgSystemOfficeHelix3 extends JPlugin
 		$plg_path = JURI::root(true) . '/plugins/system/officehelix3';
 		JForm::addFormPath(JPATH_PLUGINS . '/system/officehelix3/params');
 
+		JForm::addFormPath(JPATH_PLUGINS . '/system/officehelix3/params');
+//	Helix fix for Joomla 3.8.10 
+    	if (is_object($data)) {
+				$data = (array)$data;
+			}
+//	End Fix	
+
 		// Add Helix menu params to the menu item
 		if ($form->getName()=='com_menus.item') { 
 
