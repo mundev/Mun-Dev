@@ -47,9 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		<?php echo DISCUSS_POWERED_BY; ?>
 	<?php } ?>
 
-	<?php if (JRequest::getVar('tmpl') != 'component') { ?>
-		<?php echo ED::profiler()->html();?>
-	<?php } ?>
+
 
 	<input type="hidden" class="easydiscuss-token" value="<?php echo ED::getToken();?>" data-ed-token />
 	<input type="hidden" data-ed-ajax-url value="<?php echo $ajaxUrl;?>" />
